@@ -4,6 +4,10 @@ body h1{
 
 }
 
+h2{
+    white-space: pre-line;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -24,10 +28,9 @@ body{
     
 }
 
-.button{
+.quiz p{
+    text-align: left;
+
 
 }
 
-.quizCard{
-
-}
