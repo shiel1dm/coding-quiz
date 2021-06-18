@@ -27,25 +27,40 @@ var questions = [
 
 localStorage.setItem('questions', JSON.stringify(questions))
 
+console.log(questions[0].answers.a)
+
 
 //Functions:
 function quizStart(){
     var content = JSON.parse(localStorage.getItem('questions')) 
-    var test = document.createElement('button')
-    var title = document.createElement('h3')
+    var choices = document.createElement('p')
+    var question = document.createElement('h3')
+    var answers = content[0].answers
 
-    title.textContent = content.question
-    test.textContent = content.answer
-    quiz.appendChild(title)
-    quiz.appendChild(test)
-    for(i = 0; i < question1.wrong.length; i++){
-        test.textContent = content.wrong[i];
-        quiz.appendChild(test)
-    }
+    question.textContent = content[0].question
+   
+     var q1 = content[0].answers.a
+     var q2 = content[0].answers.b
+     var q3 = content[0].answers.c
+     var q4 = content[0].answers.d
+
+     quiz.appendChild(question)
+     quiz.innerHTML += "<label> <input type='radio' name='choices' value='a'>"+q1+"</label><br>"
+     quiz.innerHTML += "<label> <input type='radio' name='choices' value='a'>"+q2+"</label><br>"
+     quiz.innerHTML += "<label> <input type='radio' name='choices' value='a'>"+q3+"</label><br>"
+     quiz.innerHTML += "<label> <input type='radio' name='choices' value='a'>"+q4+"</label><br>"
+    
+    
+    
+    
+   
+
+
+    
 
 }
 
-questions.forEach
+
 
 function btnClick(){
     document.querySelector('.button').style.visibility = 'hidden';
