@@ -1,6 +1,8 @@
 body h1{
     text-align: center;
     font-weight: bold;
+    font-family: 'Crimson Text', serif;
+    color: black;
 
 }
 
@@ -13,7 +15,7 @@ body{
     flex-direction: column;
     align-items: center;
     font-size: 2em;
-    
+    color: #FFFFFF;
 }
 
 .container{
@@ -25,12 +27,26 @@ body{
     border-radius: 25px;
     border: 5px,5px,5px,5px, black;
     text-align: center;
+    background-color: #C8102E;
     
 }
 
+#box{
+    border-top: 5px solid ;
+}
+
+.quiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+}
+
+h3 {
+    font-family: 'Crimson Text', serif;
+}
+
 .quiz label{
-    text-align: left;
-
-
+    float: left;
 }
 
